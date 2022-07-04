@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart';
 import '/quote.dart';
 
 class QuoteCard extends StatelessWidget {
-  //why final? because we are using stateless widget in which use of data cannot be possible.so to assure it that it will change we use final.
+  //why final? because we are using stateless widget in which data modification is not possible.so to assure it that it will never change we use final.
   final Quote quote;
   final VoidCallback delete;
   QuoteCard({required this.quote, required this.delete});
